@@ -1,0 +1,17 @@
+{
+    "name": "web-theme",
+    "description": "Spice up discord web with custom images",
+    "version": "1.0",
+    "manifest_version": 3,
+"permissions": [
+      "activeTab",
+      "storage"
+    ],
+  
+    "content_scripts": [
+      {
+        "matches": ["*://discord.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
